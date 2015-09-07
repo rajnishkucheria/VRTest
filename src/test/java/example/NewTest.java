@@ -12,13 +12,12 @@ public class NewTest {
     @Test              
     public void testEasy() {   
     	WebDriver driver = new FirefoxDriver();
-	  driver.get("https://beta.deltamktgresearch.com/");
-	  driver.findElement(By.id("inputPassword")).sendKeys("nexsales");
-	  driver.findElement(By.id("inputUsername")).sendKeys("superpro");
+	  driver.get("loginURL");
+	  driver.findElement(By.id("inputPassword")).sendKeys("loginId");
+	  driver.findElement(By.id("inputUsername")).sendKeys("password");
 	  driver.findElement(By.id("log_in")).click();
 	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	  driver.findElement(By.linkText("Sessions")).click();
-	  System.out.println("rajnish");
 	  driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();  
         driver.quit();
     }   
