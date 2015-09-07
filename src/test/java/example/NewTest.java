@@ -12,10 +12,14 @@ public class NewTest {
     @Test              
     public void testEasy() {   
     	WebDriver driver = new FirefoxDriver();
-    	
-        driver.get("http://www.guru99.com/selenium-tutorial.html");  
-        String title = driver.getTitle();                
-        Assert.assertTrue(title.contains("Free Selenium Tutorials"));   
+	  driver.get("https://beta.deltamktgresearch.com/");
+	  driver.findElement(By.id("inputPassword")).sendKeys("nexsales");
+	  driver.findElement(By.id("inputUsername")).sendKeys("superpro");
+	  driver.findElement(By.id("log_in")).click();
+	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	  driver.findElement(By.linkText("Sessions")).click();
+	  System.out.println("rajnish");
+	  driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();  
         driver.quit();
     }   
     @BeforeTest
