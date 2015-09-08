@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
 
 public class NewTest {
 	    
