@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25589" started-at="2015-09-09T11:55:53Z" finished-at="2015-09-09T11:56:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25589" started-at="2015-09-09T11:55:53Z" finished-at="2015-09-09T11:56:19Z">
+      <class name="example.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.LoginTest@7e0ef515]" name="beforeTest" is-config="true" duration-ms="9851" started-at="2015-09-09T17:25:53Z" finished-at="2015-09-09T17:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:example.LoginTest@7e0ef515]" name="testLogin" duration-ms="15108" started-at="2015-09-09T17:26:03Z" finished-at="2015-09-09T17:26:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testIsOnline()[pri:0, instance:example.LoginTest@7e0ef515]" name="testIsOnline" duration-ms="26" started-at="2015-09-09T17:26:18Z" finished-at="2015-09-09T17:26:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsOnline -->
+        <test-method status="PASS" signature="testMenuPresent()[pri:0, instance:example.LoginTest@7e0ef515]" name="testMenuPresent" duration-ms="33" started-at="2015-09-09T17:26:18Z" finished-at="2015-09-09T17:26:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMenuPresent -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.LoginTest@7e0ef515]" name="afterTest" is-config="true" duration-ms="557" started-at="2015-09-09T17:26:18Z" finished-at="2015-09-09T17:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

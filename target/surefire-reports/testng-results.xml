@@ -1,25 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="example.NewTest" duration-ms="159757" started-at="2015-09-07T17:01:00Z" finished-at="2015-09-07T17:03:40Z">
+  <suite name="Command line suite" duration-ms="62190" started-at="2015-09-09T12:35:54Z" finished-at="2015-09-09T12:36:56Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="159757" started-at="2015-09-07T17:01:00Z" finished-at="2015-09-07T17:03:40Z">
-      <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@5f2050f6]" name="beforeTest" is-config="true" duration-ms="31" started-at="2015-09-07T22:31:00Z" finished-at="2015-09-07T22:31:00Z">
+    <test name="Command line test" duration-ms="62190" started-at="2015-09-09T12:35:54Z" finished-at="2015-09-09T12:36:56Z">
+      <class name="nexsales.ProducerTest">
+        <test-method status="FAIL" signature="testLogin()[pri:0, instance:nexsales.ProducerTest@5c9ddf21]" name="testLogin" duration-ms="12618" started-at="2015-09-09T18:06:29Z" finished-at="2015-09-09T18:06:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Network: offline] but found [Network: online]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Network: offline] but found [Network: online]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at nexsales.ProducerTest.testLogin(ProducerTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- nexsales.ProducerTest -->
+      <class name="nexsales.SupervisorTest">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:nexsales.SupervisorTest@4c8962e8]" name="testLogin" duration-ms="13781" started-at="2015-09-09T18:06:41Z" finished-at="2015-09-09T18:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="FAIL" signature="testIsOnline()[pri:0, instance:nexsales.SupervisorTest@4c8962e8]" name="testIsOnline" duration-ms="92" started-at="2015-09-09T18:06:55Z" finished-at="2015-09-09T18:06:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Network: offline] but found [Network: online]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Network: offline] but found [Network: online]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at nexsales.SupervisorTest.testIsOnline(SupervisorTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsOnline -->
+        <test-method status="PASS" signature="testMenuPresent()[pri:0, instance:nexsales.SupervisorTest@4c8962e8]" name="testMenuPresent" duration-ms="108" started-at="2015-09-09T18:06:55Z" finished-at="2015-09-09T18:06:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMenuPresent -->
+      </class> <!-- nexsales.SupervisorTest -->
+      <class name="nexsales.ConsumerTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:nexsales.ConsumerTest@5e329ba8]" name="beforeTest" is-config="true" duration-ms="7493" started-at="2015-09-09T18:05:54Z" finished-at="2015-09-09T18:06:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@5f2050f6]" name="testEasy" duration-ms="159350" started-at="2015-09-07T22:31:00Z" finished-at="2015-09-07T22:33:40Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:nexsales.ProducerTest@5c9ddf21]" name="beforeTest" is-config="true" duration-ms="6351" started-at="2015-09-09T18:06:01Z" finished-at="2015-09-09T18:06:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@5f2050f6]" name="afterTest" is-config="true" duration-ms="52" started-at="2015-09-07T22:33:40Z" finished-at="2015-09-07T22:33:40Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:nexsales.SupervisorTest@4c8962e8]" name="beforeTest" is-config="true" duration-ms="6965" started-at="2015-09-09T18:06:07Z" finished-at="2015-09-09T18:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:nexsales.ConsumerTest@5e329ba8]" name="testLogin" duration-ms="14360" started-at="2015-09-09T18:06:14Z" finished-at="2015-09-09T18:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testIsOnline()[pri:0, instance:nexsales.ConsumerTest@5e329ba8]" name="testIsOnline" duration-ms="83" started-at="2015-09-09T18:06:55Z" finished-at="2015-09-09T18:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsOnline -->
+        <test-method status="PASS" signature="testMenuPresent()[pri:0, instance:nexsales.ConsumerTest@5e329ba8]" name="testMenuPresent" duration-ms="89" started-at="2015-09-09T18:06:55Z" finished-at="2015-09-09T18:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMenuPresent -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:nexsales.ConsumerTest@5e329ba8]" name="afterTest" is-config="true" duration-ms="80" started-at="2015-09-09T18:06:56Z" finished-at="2015-09-09T18:06:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- example.NewTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:nexsales.ProducerTest@5c9ddf21]" name="afterTest" is-config="true" duration-ms="80" started-at="2015-09-09T18:06:56Z" finished-at="2015-09-09T18:06:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:nexsales.SupervisorTest@4c8962e8]" name="afterTest" is-config="true" duration-ms="74" started-at="2015-09-09T18:06:56Z" finished-at="2015-09-09T18:06:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- nexsales.ConsumerTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- example.NewTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>

@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: example.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.667 sec <<< FAILURE!
+testLogin(example.LoginTest)  Time elapsed: 52.871 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (Session info: chrome=44.0.2403.157)
+  (Driver info: chromedriver=2.19.346067 (6abd8652f8bc7a1d825962003ac88ec6a37a82f1),platform=Linux 3.16.0-38-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52.65 seconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'innovationteam-ThinkPad-T440p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-38-generic', java.version: '1.7.0_79'
+*** Element info: {Using=link text, value=Sessionsssss}
+Session ID: c2f9e22c7e3bfc83929d29e187392ea7
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.maO6ku}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=44.0.2403.157, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByLinkText(RemoteWebDriver.java:405)
+	at org.openqa.selenium.By$ByLinkText.findElements(By.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at example.LoginTest.testLogin(LoginTest.java:31)
